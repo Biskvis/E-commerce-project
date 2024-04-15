@@ -33,7 +33,7 @@ export default function Hero() {
             src='/hero.jpg'
             width={600}
             height={200}
-            className="ml-auto p-2 rounded-xl"
+            className="ml-auto p-2 rounded-xl hidden md:block"
             alt='orange-tree-picture'
         />
       </div> 

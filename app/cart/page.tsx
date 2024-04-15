@@ -84,7 +84,7 @@ export default function Page() {
                 Go to Products
                 </button>
                 </Link>}
-            <div className='grid grid-cols-2'>
+            <div className='grid md:grid-cols-2'>
                 {cart}
             </div>
             {cart.length > 0 && 

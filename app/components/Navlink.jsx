@@ -15,7 +15,7 @@ export default function Navlink() {
         <div className="h-16 border flex items-center justify-center">
             <Link
                 href='/'
-                className="mr-auto p-4 text-4xl bg-gradient-to-r from-cyan-500 to-green-500 text-transparent bg-clip-text"
+                className="mr-auto p-4 text-xl md:text-4xl bg-gradient-to-r from-cyan-500 to-green-500 text-transparent bg-clip-text"
              
              >Fruitio</Link>
 
@@ -26,7 +26,7 @@ export default function Navlink() {
                 </Suspense>
                 
                 
-                <button type="submit" className="absolute right-0 top-0 mt-5 mr-4">
+                <button type="submit" className="hidden md:block absolute right-0 top-0 mt-5 mr-4">
                     <svg className="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                         viewBox="0 0 56.966 56.966" style={{ enableBackground: 'new 0 0 56.966 56.966' }} xmlSpace="preserve"
@@ -37,9 +37,9 @@ export default function Navlink() {
                 </button>
             </div>
 
-            <Link href='/' className="p-2 text-xl hover:scale-110">Home</Link>
-            <Link href='/products' className="p-2 text-xl hover:scale-110">Products</Link>
-            <Link href='/about' className=" p-2 text-xl hover:scale-110">About</Link>
+            <Link href='/' className="p-2 md:text-xl hover:scale-110">Home</Link>
+            <Link href='/products' className="p-2 md:text-xl hover:scale-110">Products</Link>
+            <Link href='/about' className=" p-2 md:text-xl hover:scale-110">About</Link>
             <div className="">
                 <Link 
                     href='/cart'
@@ -55,7 +55,7 @@ export default function Navlink() {
                 </Link>
                 
             </div>
-            <span className="mr-20 text-emerald-400 text-xl -ml-2 font-bold">{state.length > 0 && state.length}</span>
+                <span className="relative md:mr-20 text-emerald-400 text-xl -ml-2 font-bold">{state.length > 0 && state.length}</span>
         </div>
     );
 }
